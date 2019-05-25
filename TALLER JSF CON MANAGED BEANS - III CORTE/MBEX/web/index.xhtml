@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Formulario con Validacion</title>
+        <link href="DataStyles.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+    </h:head>
+    <h:body>
+        <div class="container" style="margin-top: 2%; margin-bottom: 1%;">
+            <h4><label id="label">Ingresar los datos de usuario con el codigo de validación</label></h4>
+        </div>
+        <div class="container" style="margin-bottom: 5%">
+            <h:form>
+                <div class="form row">
+                    <div class="col-md-6" style="text-align:center">
+                        <table class="table"  >
+                            <tr>
+                                <td><label>Usuario:</label></td>
+                                <td> <h:inputText id="user" size="40" maxlength="60" 
+                                                  value="#{userManagedBean.user}" class="form-control" required="true"/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Apodo o Alias:</label></td>
+                                <td> <h:inputText  id="nickname" size="40" maxlength="60"
+                                                   value="#{userManagedBean.nickName}" class="form-control" required="true"/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Correo Electronico:</label>
+                                </td>
+                                <td><h:inputText  id="email" size="40" maxlength="60"
+                                                  value="#{userManagedBean.email}" class="form-control" required="true"/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Verificacion por Codigo:</label>
+                                </td>
+                                <td><h:inputText  id="validationcode" size="40" maxlength="60"
+                                                  value="#{userManagedBean.validationCode}" required="true" class="form-control"/></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div >
+                            <small><i>El codigo es necesario para validar el usuario</i></small>
+                        </div>
+                        <div>
+                            <h:commandButton id="submit" 
+                                             value="Enviar" 
+                                             action="Validacion por Codigo" class="form-control btn btn-dark" style="height: 40px; width: 200px"/>
+                        </div>
+                                    
+                                    
+                                </td>   
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+            </h:form>
+        </div>
+    </h:body>
+</html>
