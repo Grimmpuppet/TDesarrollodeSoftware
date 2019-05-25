@@ -1,0 +1,100 @@
+body{
+    text-transform: capitalize;
+    font-weight: bolder;
+    background-image:url(../images/abstract-art-artistic-251287.jpg);
+    background-size:150%;
+    background-repeat: repeat;
+        
+    
+}
+
+#closer{
+    border: solid blue;
+    width: 700px;
+    height: 820px;
+    background-color: skyblue;
+    margin-left:20%;
+    padding: 1rem;
+    
+}
+
+
+
+imagen {
+    float: left;
+    height: 100px;
+}
+
+#back{
+background-color: whitesmoke;    
+    
+    
+}
+
+#Container {
+    padding-left: 200px;
+}
+
+#form {
+    border: azure;
+    display: block;
+    height: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 125px;
+}
+
+input, select {
+    width: 80%;
+}
+
+#div2 label {
+    display: inline-block;
+    width: 100px;
+    padding-left: 125px;
+}
+
+#div2>select {
+    width: 70%;
+}
+
+#div2>input {
+    width: 70%;
+}
+
+table, th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid rgb(182, 180, 180);
+    border-collapse: collapse;
+    padding: 0.3em;
+}
+
+td {
+    height: 5px;
+}
+
+th {
+    text-align: center;
+}
+
+#td2 {
+    height: 50px;
+}
+
+#div3 {
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+table {
+    width: 80%;
+}
+
+#input2 {
+    height: 100px;
+}
