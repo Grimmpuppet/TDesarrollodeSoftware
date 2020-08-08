@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Cascading Styles Sheets + Html</title>
+<link rel=stylesheet type="text/css" href="CascadingStyleSheets2.css"  media=all>
+<body id="body2">
+
+<div id="cajaback"><h1>Cascading Style Sheets</h1></div>
+
+<br/>
+<div id="cajaback"><h1>Attribute Background Repeat</h1></div>
+<div id="repeat"></div>
+
+
+<br/>
+
+<div id="cajaback"><h1>Attribute border style</h1></div>
+<br/>
+<div id="backg">
+<div id="cajad"><h1>Attribute border style : dotted</h1></div>
+<br/>
+<div id="cajada"><h1>Attribute border style : dashed</h1></div>
+<br/>
+<div id="cajas"><h1>Attribute border style : solid</h1></div>
+<br/>
+<div id="cajado"><h1>Attribute border style : double</h1></div>
+<br/>
+<div id="cajagro"><h1>Attribute border style : groove</h1></div>
+<br/>
+<div id="cajadri"><h1>Attribute border style : ridge</h1></div>
+<br/>
+<div id="cajadin"><h1>Attribute border style : inset</h1></div>
+<br/>
+<div id="cajadou"><h1>Attribute border style : outset</h1></div>
+<br/>
+</div>
+<br/>
+<div id="cajaback"><h1>Attribute Border Radius </h1></div>
+<br/>
+<h3 id="borderadius">Los bordes redondeados se implementaron como parte de la especificacion de CSS3</h3>
+</br>
+</br>
+<div id="cajaback"><h1>Attribute Cursor- CSS </h1></div>
+</br>
+</br>
+<div id="cajaback2">
+<p class="alias">alias</p><p class="auto">auto</p><p class="crosshair">crosshair</p>
+<p class="default">default</p>
+<p class="e-resize">e-resize</p>
+<p class="grab">grab</p>
+<p class="help">help</p>
+<p class="move">move</p>
+<p class="n-resize">n-resize</p>
+<p class="ne-resize">ne-resize</p>
+<p class="nw-resize">nw-resize</p>
+<p class="no-drop">no-drop</p>
+<p class="not-allowed">not-allowed</p>
+<p class="pointer">pointer</p>
+<p class="progress">progress</p>
+<p class="s-resize">s-resize</p>
+<p class="se-resize">se-resize</p>
+<p class="sw-resize">sw-resize</p>
+<p class="text">text</p>
+<p class="w-resize">w-resize</p>
+<p class="wait">wait</p>
+<p class="zoom-in">zoom-in</p>
+<div></div>
+
+<div id="cajaback"><h1>Formulario </h1></div>
+<div id="centrado">
+<form method="post">
+      
+        <h1>Sign Up</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Tu Informacion Basica</legend>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="user_name" placeholder="escriba su nombre completo">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" required placeholder="escriba su email">
+          
+          <label for="password">contraseña:</label>
+          <input type="password" id="password" name="user_password" placeholder="escriba su contraseña segura">
+          
+          <label>edad:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">menos de 13</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">de 13 a mas</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Tu perfil</legend>
+          <label for="bio">Descripcion:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+        <fieldset>
+        <label for="job">Rol de Trabajador:</label>
+        <select id="job" name="user_job">
+          <optgroup label="Movel">
+            <option value="Android_developer">Desarrollador Movil</option>
+            <option value="iOS_developer"> Desarrollador iOS </option>
+            <option value="mobile_designer"> Desarrollador Mobile</option>
+          </optgroup>
+          <optgroup label="Ventas">
+            <option value="business_owner">Gerente de ventas</option>
+            <option value="freelancer">Freelancer</option>
+          </optgroup>
+          <optgroup label="Otros">
+            <option value="secretary">Secretaria</option>
+            <option value="maintenance">Mantenimiento</option>
+          </optgroup>
+        </select>
+        
+          <label>Intereses:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Desarrollo</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Freelancer</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Ventas</label>
+        
+        </fieldset>
+        <button type="submit" id="colorb">Ingrese</button>
+      </form>
+	  </div>
+	 
