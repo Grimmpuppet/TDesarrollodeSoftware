@@ -1,0 +1,42 @@
+
+<html>
+<head>
+<link href="styles/test_style.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header" class="no_hover"><h1>Header</h1></div>
+<button type="button" id="btn1">Click to Add</button>
+<button type="button" id="btn2">Click to Remove</button>
+
+</body>
+</html>
+
+
+<style>
+
+.hover{
+border: solid #f00 3px;
+}
+.no_hover{
+border: solid #000 3px;
+}
+
+</style>
+
+
+<script>
+
+$(document).ready(function() {
+$("#btn1").click( function(){
+$("#header").addClass("hover");
+$("#header").removeClass("no_hover");
+});
+$("#btn2").click( function(){
+$("#header").removeClass("hover");
+$("#header").addClass("no_hover");
+});
+});
+</script>
